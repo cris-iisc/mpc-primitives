@@ -1,0 +1,31 @@
+############################################################
+# Dockerfile to build and image with all libscapi prerequisites
+# Based on Ubuntu 16.04
+############################################################
+
+# Set the base image to Ubuntu
+FROM ubuntu:16.04
+
+# Update the repository sources list and Install all required packages
+RUN apt-get clean
+RUN rm -rf /var/cache/apt/*
+RUN rm -rf /var/lib/apt/lists/*
+RUN apt-get update
+RUN apt-get install -y
+RUN apt-get install wget -y
+RUN apt-get install git -y
+RUN apt-get install build-essential -y
+RUN apt-get install libssl-ocaml-dev -y
+RUN apt-get install libssl-dev -y
+RUN apt-get install libgmp3-dev -y 
+RUN apt-get install vim -y
+RUN apt-get install cmake -y
+RUN rm -rf /var/lib/apt/lists/*
+
+# Download and install boost
+WORKDIR /root
+RUN wget -O boost_1_64_0.tar.bz2 http://sourceforge.net/projects/boost/files/boost/1.64.0/boost_1_64_0.tar.bz2/download 
+RUN tar --bzip2 -xf boost_1_64_0.tar.bz2
+WORKDIR boost_1_64_0
+RUN ./bootstrap.sh
+RUN ./b2 -j 8; exit 0 # TODO: boost build fails on some packages - need to fix it

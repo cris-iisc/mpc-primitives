@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Primitives">
+      <UniqueIdentifier>{51ffee10-00ef-441e-b350-b58ff84e0931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\primitives">
+      <UniqueIdentifier>{418e750c-7347-422b-a632-a64f3e5b83b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Comm">
+      <UniqueIdentifier>{79a2cd36-752e-450e-835b-abf8f0c6e23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\comm">
+      <UniqueIdentifier>{4fb4dc21-5d7a-4797-a223-c20a3da42368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\infra">
+      <UniqueIdentifier>{15ba0fb9-36ad-4a3e-8eae-a7456ec739e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\infra">
+      <UniqueIdentifier>{bab7e697-5caa-4f0a-a335-99e5585989ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Circuits">
+      <UniqueIdentifier>{88a348d2-e938-4485-a69a-e7bff58a0c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Circuits">
+      <UniqueIdentifier>{f3a1c2e5-5eaf-4913-9d96-a9077922ff3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\InteractiveMidProtocols">
+      <UniqueIdentifier>{c4fd74e2-91c3-4318-ad2b-45c305e0302b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\InteractiveMidProtocols">
+      <UniqueIdentifier>{3d3b1c69-225b-48bc-b76c-866a5ded37d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MidLayer">
+      <UniqueIdentifier>{8599081e-49bd-4ae0-acf1-4c86b5c6e861}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\circuits\BooleanCircuits.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\infra\Common.cpp">
+      <Filter>Source Files\infra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\infra\ConfigFile.cpp">
+      <Filter>Source Files\infra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\infra\MathAlgorithms.cpp">
+      <Filter>Source Files\infra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\infra\Scanner.cpp">
+      <Filter>Source Files\infra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemePedersen.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTSemiHonestExtension.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocol.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolAnd.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDlog.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\ZeroKnowledge.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\Dlog.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\DlogCryptopp.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\DlogOpenSSL.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\HashOpenSSL.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\Kdf.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\prf.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\PrfOpenSSL.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\Prg.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\RandomOracle.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\TrapdoorPermutation.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\primitives\TrapdoorPermutationOpenSSL.cpp">
+      <Filter>Source Files\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\FreeXorGarbledBooleanCircuit.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuit.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuitFixedKey.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuitNoFixedKey.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\GarbledCircuitFactory.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\HalfGatesGarbledBooleanCircuit.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\RowReductionGarbledBooleanCircuit.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\StandardGarbledBooleanCircuit.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\TedKrovetzAesNiWrapperC.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\HalfGatesGarbledBoleanCircuitNoFixedKey.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits\FourToTwoGarbledBoleanCircuitNoAssumptions.cpp">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDH.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks1_enc1.c">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks2_enc2.c">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks4_enc4.c">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks4_enc8.c">
+      <Filter>Source Files\Circuits</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\comm\Comm.cpp">
+      <Filter>Source Files\comm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDHExtended.cpp">
+      <Filter>Source Files\InteractiveMidProtocols</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\circuits\BooleanCircuits.hpp">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\comm\Message.hpp">
+      <Filter>Header Files\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\Common.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\ConfigFile.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\File.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\Log.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\MathAlgorithms.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\infra\Scanner.hpp">
+      <Filter>Header Files\infra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentScheme.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemePedersen.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTSemiHonestExtension.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\RandomValue.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocol.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolAnd.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDlog.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolPedersen.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\ZeroKnowledge.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\mid_layer\PlainText.hpp">
+      <Filter>Header Files\MidLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Dlog.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\DlogOpenSSL.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Hash.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\HashOpenSSL.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Kdf.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Key.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\mac.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Prf.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\PrfOpenSSL.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\Prg.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\RandomOracle.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\SecurityLevel.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\TrapdoorPermutationOpenSSL.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\primitives\TrapdoorPermutations.hpp">
+      <Filter>Header Files\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\Compat.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\Config.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\FreeXorGarbledBooleanCircuit.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuit.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuitFixedKey.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuitNoFixedKey.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\GarbledCircuitFactory.hpp">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\GarbledGate.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\HalfGatesGarbledBooleanCircuit.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\intrinsic.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\RowReductionGarbledBooleanCircuit.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\StandardGarbledBooleanCircuit.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\stdafx.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\targetver.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\TedKrovetzAesNiWrapperC.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\HalfGatesGarbledBoleanCircuitNoFixedKey.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\circuits\FourToTwoGarbledBoleanCircuitNoAssumptions.h">
+      <Filter>Header Files\Circuits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDH.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+    </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDHExtended.hpp">
+      <Filter>Header Files\InteractiveMidProtocols</Filter>
+=======
+    <ClInclude Include="..\..\include\comm\Comm.hpp">
+      <Filter>Header Files\Comm</Filter>
+>>>>>>> fixing the examples to have only one main
+    </ClInclude>
+  </ItemGroup>
+</Project>

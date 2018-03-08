@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{521BFBF5-210B-4CDC-BC47-3A48A6896ABC}</ProjectGuid>
+    <RootNamespace>scapi_protocols</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>
+    </CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\local\boost_1_60_0\lib64-msvc-14.0;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>C:\Github;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>C:\Github;..\..\lib\MiraclWin64\source;C:\local\boost_1_60_0;C:\OpenSSL-Win64\include;..\..\lib;..\..\lib\NTL\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x06030000;__WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\scapi-sln\x64\Release\ScapiCpp.lib;C:\OpenSSL-Win64\lib\libeay32.lib;C:\OpenSSL-Win64\lib\ssleay32.lib;..\..\lib\OTExtension\Win64-sln\x64\Release\OTExtension.lib;..\..\lib\MiraclWin64\x64\Release\MiraclWin64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\protocols\GMW\CBitVector.h" />
+    <ClInclude Include="..\..\protocols\GMW\Circuit.h" />
+    <ClInclude Include="..\..\protocols\GMW\GMWParty.h" />
+    <ClInclude Include="..\..\protocols\GMW\MPCCommunication.h" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceCommitter.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceParty.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceReceiver.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\DifferenceCommitmentCommitterBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\DifferenceCommitmentReceiverBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\ProveDiff.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\SC.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\SCom.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\aligned_allocator.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\aligned_allocator_no_destructor.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\BinaryUtils.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\CommonMaliciousYao.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\KeyUtils.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\LogTimer.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketBundleList.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketLimitedBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketLimitedBundleList.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketMapping.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\Bundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BundleBuilder.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CheatingRecoveryBundleBuilder.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CommitmentBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CommitmentsPackage.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\DecommitmentsPackage.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\EvaluationPackage.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\LimitedBundle.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OfflineProtocolP1.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OfflineProtocolP2.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OnlineProtocolP1.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OnlineProtocolP2.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\CutAndChooseProver.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\CutAndChooseVerifier.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OfflineOtReceiverRoutine.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OfflineOtSenderRoutine.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OnlineComputeRoutine.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CheatingRecoveryCircuitCreator.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CircuitInput.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CircuitOutput.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CommunicationConfig.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CryptoPrimitives.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CutAndChooseSelection.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\ExecutionParameters.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\KProbeResistantMatrix.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\SeededRandomnessProvider.hpp" />
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\UnlockP1InputCircuitCreator.hpp" />
+    <ClInclude Include="..\..\protocols\SemiHonestYao\YaoParties.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\protocols\GMW\Circuit.cpp" />
+    <ClCompile Include="..\..\protocols\GMW\GMWParty.cpp" />
+    <ClCompile Include="..\..\protocols\GMW\main.cpp" />
+    <ClCompile Include="..\..\protocols\GMW\MPCCommunication.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceCommitter.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceParty.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceReceiver.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\DifferenceCommitmentCommitterBundle.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\ProveDiff.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\SC.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\SCom.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\BinaryUtils.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\CommonMaliciousYao.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\KeyUtils.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketBundleList.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketLimitedBundleList.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketMapping.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\Bundle.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BundleBuilder.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CheatingRecoveryBundleBuilder.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CommitmentBundle.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CommitmentsPackage.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\DecommitmentsPackage.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\EvaluationPackage.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\LimitedBundle.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OfflineProtocolP1.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OfflineProtocolP2.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OnlineProtocolP1.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OnlineProtocolP2.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\CutAndChooseProver.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\CutAndChooseVerifier.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OfflineOtReceiverRoutine.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OfflineOtSenderRoutine.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OnlineComputeRoutine.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CheatingRecoveryCircuitCreator.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CircuitInput.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CommunicationConfig.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CryptoPrimitives.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CutAndChooseSelection.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\KProbeResistantMatrix.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\SeededRandomnessProvider.cpp" />
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\UnlockP1InputCircuitCreator.cpp" />
+    <ClCompile Include="..\..\protocols\SemiHonestYao\App1.cpp" />
+    <ClCompile Include="..\..\protocols\SemiHonestYao\YaoParties.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

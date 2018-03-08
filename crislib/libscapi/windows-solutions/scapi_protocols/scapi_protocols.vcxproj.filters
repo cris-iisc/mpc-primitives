@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GMW">
+      <UniqueIdentifier>{1217acad-278e-431a-9a20-b2e3cb7c8956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SemiHonestYao">
+      <UniqueIdentifier>{792e7d94-5a66-4034-a258-8e25b4690833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GMW">
+      <UniqueIdentifier>{000ffc09-5957-43b1-a6c7-9be2726a237e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SemiHonestYao">
+      <UniqueIdentifier>{908d8599-9bd5-480a-8385-ded32ac500d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao">
+      <UniqueIdentifier>{e42ad391-f1ef-4419-84b3-a93f40a0444b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\CommitmentWithZkProofOfDifference">
+      <UniqueIdentifier>{5b3c5ba1-9def-4aa0-a0fe-9c6f533f2b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\common">
+      <UniqueIdentifier>{26a0fe60-9257-49c2-9db7-8cea969f7cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\OfflineOnline">
+      <UniqueIdentifier>{4ee59fae-05f8-47cb-94e1-b6c4e1101c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\OfflineOnline\primitives">
+      <UniqueIdentifier>{cd20e9d5-e9c8-45a5-ba4d-d1599a918bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\OfflineOnline\specs">
+      <UniqueIdentifier>{1476023a-ec5e-4b0f-8ef3-46f861120ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\OfflineOnline\subroutines">
+      <UniqueIdentifier>{37aebb72-6344-47b5-a307-2c3d9fb54df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MaliciousYao\primitives">
+      <UniqueIdentifier>{940ddf21-9b56-4404-8ebc-b9b0fafd62c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao">
+      <UniqueIdentifier>{9624a723-01ad-4b83-9953-7155f408d975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\CommitmentWithZkProofOfDifference">
+      <UniqueIdentifier>{d656a388-9a19-4bee-9ff7-19d1860b2396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\common">
+      <UniqueIdentifier>{c6f543c7-dede-45e6-b570-8064bb523053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\OfflineOnline">
+      <UniqueIdentifier>{af963f80-eb84-44c8-8e6b-706110d2332b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\OfflineOnline\primitives">
+      <UniqueIdentifier>{2fc2860a-be99-49bf-a37f-9a1cf7dca86f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\OfflineOnline\specs">
+      <UniqueIdentifier>{422a942a-81f0-4bad-87d5-e818d9be33e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\OfflineOnline\subroutines">
+      <UniqueIdentifier>{9c850caa-3d93-48d7-8f23-00c48582487b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MaliciousYao\primitives">
+      <UniqueIdentifier>{ce50c5b5-c1f2-4b49-b736-015950dc0387}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\protocols\GMW\CBitVector.h">
+      <Filter>Header Files\GMW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\GMW\Circuit.h">
+      <Filter>Header Files\GMW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\GMW\GMWParty.h">
+      <Filter>Header Files\GMW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\GMW\MPCCommunication.h">
+      <Filter>Header Files\GMW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\SemiHonestYao\YaoParties.hpp">
+      <Filter>Header Files\SemiHonestYao</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceCommitter.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceParty.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\CmtWithDifferenceReceiver.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\DifferenceCommitmentCommitterBundle.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\DifferenceCommitmentReceiverBundle.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\ProveDiff.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\SC.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\CommitmentWithZkProofOfDifference\SCom.hpp">
+      <Filter>Header Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\aligned_allocator.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\aligned_allocator_no_destructor.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\BinaryUtils.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\CommonMaliciousYao.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\KeyUtils.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\common\LogTimer.hpp">
+      <Filter>Header Files\MaliciousYao\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketBundle.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketBundleList.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketLimitedBundle.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketLimitedBundleList.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BucketMapping.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\Bundle.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\BundleBuilder.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CheatingRecoveryBundleBuilder.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CommitmentBundle.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\CommitmentsPackage.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\DecommitmentsPackage.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\EvaluationPackage.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\primitives\LimitedBundle.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OfflineProtocolP1.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OfflineProtocolP2.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OnlineProtocolP1.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\specs\OnlineProtocolP2.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\CutAndChooseProver.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\CutAndChooseVerifier.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OfflineOtReceiverRoutine.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OfflineOtSenderRoutine.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\OfflineOnline\subroutines\OnlineComputeRoutine.hpp">
+      <Filter>Header Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CheatingRecoveryCircuitCreator.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CircuitInput.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CircuitOutput.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CommunicationConfig.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CryptoPrimitives.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\CutAndChooseSelection.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\ExecutionParameters.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\KProbeResistantMatrix.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\SeededRandomnessProvider.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protocols\MaliciousYao\lib\include\primitives\UnlockP1InputCircuitCreator.hpp">
+      <Filter>Header Files\MaliciousYao\primitives</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\protocols\GMW\GMWParty.cpp">
+      <Filter>Source Files\GMW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\GMW\Circuit.cpp">
+      <Filter>Source Files\GMW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\GMW\main.cpp">
+      <Filter>Source Files\GMW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\GMW\MPCCommunication.cpp">
+      <Filter>Source Files\GMW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\SemiHonestYao\YaoParties.cpp">
+      <Filter>Source Files\SemiHonestYao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\SemiHonestYao\App1.cpp">
+      <Filter>Source Files\SemiHonestYao</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceCommitter.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceParty.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\CmtWithDifferenceReceiver.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\DifferenceCommitmentCommitterBundle.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\ProveDiff.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\SC.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\CommitmentWithZkProofOfDifference\SCom.cpp">
+      <Filter>Source Files\MaliciousYao\CommitmentWithZkProofOfDifference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\BinaryUtils.cpp">
+      <Filter>Source Files\MaliciousYao\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\CommonMaliciousYao.cpp">
+      <Filter>Source Files\MaliciousYao\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\common\KeyUtils.cpp">
+      <Filter>Source Files\MaliciousYao\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketBundleList.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketLimitedBundleList.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BucketMapping.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\Bundle.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\BundleBuilder.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CheatingRecoveryBundleBuilder.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CommitmentBundle.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\CommitmentsPackage.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\DecommitmentsPackage.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\EvaluationPackage.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\primitives\LimitedBundle.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OfflineProtocolP1.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OfflineProtocolP2.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OnlineProtocolP1.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\specs\OnlineProtocolP2.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\specs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\CutAndChooseProver.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\CutAndChooseVerifier.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OfflineOtReceiverRoutine.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OfflineOtSenderRoutine.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\OfflineOnline\subroutines\OnlineComputeRoutine.cpp">
+      <Filter>Source Files\MaliciousYao\OfflineOnline\subroutines</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CheatingRecoveryCircuitCreator.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CircuitInput.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CommunicationConfig.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CryptoPrimitives.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\CutAndChooseSelection.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\KProbeResistantMatrix.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\SeededRandomnessProvider.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocols\MaliciousYao\lib\src\primitives\UnlockP1InputCircuitCreator.cpp">
+      <Filter>Source Files\MaliciousYao\primitives</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

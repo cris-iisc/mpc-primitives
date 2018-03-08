@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C703BA5-F97D-4C6A-9655-CD1305889089}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>ScapiTests.exe</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>C:\code\gmp-static;C:\Program Files %28x86%29\Boost\boost_1_58_0;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)obj\</OutDir>
+    <IntDir>obj\</IntDir>
+    <LibraryPath>C:\code\gmp-static;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>ScapiTests.exe</NMakeOutput>
+    <NMakeCleanCommandLine>make clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\lib\MiraclWin64\source;C:\OpenSSL-Win64\include;..\..\lib\NTL\windows\include;..\..\lib;C:\local\boost_1_60_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x06030000;__WINSOCK_DEPRECATED_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\code\Builds\CryptoPP\Output\Debug;C:\Program Files\Boost\boost_1_55_0\stage\lib;C:\OpenSSL-Win64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\code\Builds\CryptoPP\Output\Debug\cryptlib.lib;C:\code\Builds\Miracl Build\test_folder\miracl.lib;C:\OpenSSL-Win64\lib\libeay32.lib;C:\code\scapi\lib\ScGarbledCircuitNoFixedKey\ScGarbledCircuitNoFixedKey1\Debug\ScGarbledCircuitNoFixedKey1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\lib;C:\OpenSSL-Win64\include;C:\local\boost_1_60_0;..\..\lib\MiraclWin64\source;..\..\lib\NTL\windows\include;C:\MaliciousYaoProject\libscapi\lib\BLAKE2\sse;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_WIN32_WINNT=0x06030000;__WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <WarningLevel>Level1</WarningLevel>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\circuits\BooleanCircuits.cpp" />
+    <ClCompile Include="..\..\src\circuits\FourToTwoGarbledBoleanCircuitNoAssumptions.cpp" />
+    <ClCompile Include="..\..\src\circuits\HalfGatesGarbledBoleanCircuitNoFixedKey.cpp" />
+    <ClCompile Include="..\..\src\circuits\FreeXorGarbledBooleanCircuit.cpp" />
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuit.cpp" />
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuitFixedKey.cpp" />
+    <ClCompile Include="..\..\src\circuits\GarbledBooleanCircuitNoFixedKey.cpp" />
+    <ClCompile Include="..\..\src\circuits\GarbledCircuitFactory.cpp" />
+    <ClCompile Include="..\..\src\circuits\HalfGatesGarbledBooleanCircuit.cpp" />
+    <ClCompile Include="..\..\src\circuits\RowReductionGarbledBooleanCircuit.cpp" />
+    <ClCompile Include="..\..\src\circuits\StandardGarbledBooleanCircuit.cpp" />
+    <ClCompile Include="..\..\src\circuits\TedKrovetzAesNiWrapperC.cpp" />
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks1_enc1.c" />
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks2_enc2.c" />
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks4_enc4.c" />
+    <ClCompile Include="..\..\src\circuits_c\intrin_sequential_ks4_enc8.c" />
+    <ClCompile Include="..\..\src\comm\Comm.cpp" />
+    <ClCompile Include="..\..\src\infra\Common.cpp" />
+    <ClCompile Include="..\..\src\infra\ConfigFile.cpp" />
+    <ClCompile Include="..\..\src\infra\MathAlgorithms.cpp" />
+    <ClCompile Include="..\..\src\infra\Scanner.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemeElGamal.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemeElGamalHash.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemePedersen.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemePedersenHash.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\CommitmentSchemeSimpleHash.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OT.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTExtensionBristol.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTExtensionMalicious.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTFullSimulation.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTFullSimulationROM.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTOneSidedSimulation.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTPrivacyOnly.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTSemiHonest.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\OTSemiHonestExtension.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocol.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolAnd.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolCramerShoupEncryptedValue.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDamgardJurikEncryptedValue.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDamgardJurikEncryptedZero.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDamgardJurikProduct.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDH.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDHExtended.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolDlog.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolElGamalCmtKnowledge.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolElGamalCommittedValue.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolElGamalEncryptedValue.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolElGamalPrivateKey.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolOrMultiple.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolOrTwo.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolPedersenCmtKnowledge.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\SigmaProtocolPedersenCommittedValue.cpp" />
+    <ClCompile Include="..\..\src\interactive_mid_protocols\ZeroKnowledge.cpp" />
+    <ClCompile Include="..\..\src\mid_layer\BiLinearMaps.cpp" />
+    <ClCompile Include="..\..\src\mid_layer\CramerShoupEnc.cpp" />
+    <ClCompile Include="..\..\src\mid_layer\DamgardJurikEnc.cpp" />
+    <ClCompile Include="..\..\src\mid_layer\ElGamalEnc.cpp" />
+    <ClCompile Include="..\..\src\mid_layer\OpenSSLSymmetricEnc.cpp" />
+    <ClCompile Include="..\..\src\primitives\Dlog.cpp" />
+    <ClCompile Include="..\..\src\primitives\DlogCryptopp.cpp" />
+    <ClCompile Include="..\..\src\primitives\DlogOpenSSL.cpp" />
+    <ClCompile Include="..\..\src\primitives\HashBlake2.cpp" />
+    <ClCompile Include="..\..\src\primitives\HashOpenSSL.cpp" />
+    <ClCompile Include="..\..\src\primitives\Kdf.cpp" />
+    <ClCompile Include="..\..\src\primitives\prf.cpp" />
+    <ClCompile Include="..\..\src\primitives\PrfOpenSSL.cpp" />
+    <ClCompile Include="..\..\src\primitives\Prg.cpp" />
+    <ClCompile Include="..\..\src\primitives\RandomOracle.cpp" />
+    <ClCompile Include="..\..\src\primitives\TrapdoorPermutation.cpp" />
+    <ClCompile Include="..\..\src\primitives\TrapdoorPermutationOpenSSL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\circuits\BooleanCircuits.hpp" />
+    <ClInclude Include="..\..\include\circuits\Compat.h" />
+    <ClInclude Include="..\..\include\circuits\Config.h" />
+    <ClInclude Include="..\..\include\circuits\FourToTwoGarbledBoleanCircuitNoAssumptions.h" />
+    <ClInclude Include="..\..\include\circuits\HalfGatesGarbledBoleanCircuitNoFixedKey.h" />
+    <ClInclude Include="..\..\include\circuits\FreeXorGarbledBooleanCircuit.h" />
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuit.h" />
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuitFixedKey.h" />
+    <ClInclude Include="..\..\include\circuits\GarbledBooleanCircuitNoFixedKey.h" />
+    <ClInclude Include="..\..\include\circuits\GarbledCircuitFactory.hpp" />
+    <ClInclude Include="..\..\include\circuits\GarbledGate.h" />
+    <ClInclude Include="..\..\include\circuits\HalfGatesGarbledBooleanCircuit.h" />
+    <ClInclude Include="..\..\include\circuits\intrinsic.h" />
+    <ClInclude Include="..\..\include\circuits\RowReductionGarbledBooleanCircuit.h" />
+    <ClInclude Include="..\..\include\circuits\StandardGarbledBooleanCircuit.h" />
+    <ClInclude Include="..\..\include\circuits\stdafx.h" />
+    <ClInclude Include="..\..\include\circuits\targetver.h" />
+    <ClInclude Include="..\..\include\circuits\TedKrovetzAesNiWrapperC.h" />
+    <ClInclude Include="..\..\include\comm\Message.hpp" />
+    <ClInclude Include="..\..\include\comm\Comm.hpp" />
+    <ClInclude Include="..\..\include\cryptoInfra\Key.hpp" />
+    <ClInclude Include="..\..\include\cryptoInfra\PlainText.hpp" />
+    <ClInclude Include="..\..\include\cryptoInfra\SecurityLevel.hpp" />
+    <ClInclude Include="..\..\include\infra\Common.hpp" />
+    <ClInclude Include="..\..\include\infra\ConfigFile.hpp" />
+    <ClInclude Include="..\..\include\infra\File.hpp" />
+    <ClInclude Include="..\..\include\infra\Log.hpp" />
+    <ClInclude Include="..\..\include\infra\MathAlgorithms.hpp" />
+    <ClInclude Include="..\..\include\infra\Scanner.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentScheme.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemeElGamal.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemeElGamalHash.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemeEquivocal.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemePedersen.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemePedersenHash.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemePedersenTrapdoor.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\CommitmentSchemeSimpleHash.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OT.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTBatch.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTExtensionMalicious.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTFullSimulation.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTFullSimulationROM.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTOneSidedSimulation.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTPrivacyOnly.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTSemiHonest.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolCramerShoupEncryptedValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDamgardJurikEncryptedValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDamgardJurikEncryptedZero.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDamgardJurikProduct.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDHExtended.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\OTSemiHonestExtension.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\RandomValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocol.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolAnd.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDH.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolDlog.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolElGamalCmtKnowledge.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolElGamalCommittedValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolElGamalEncryptedValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolElGamalPrivateKey.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolOrMultiple.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolOrTwo.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolPedersenCmtKnowledge.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\SigmaProtocolPedersenCommittedValue.hpp" />
+    <ClInclude Include="..\..\include\interactive_mid_protocols\ZeroKnowledge.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\AsymmetricEnc.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\BiLinearMaps.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\CramerShoupEnc.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\DamgardJurikEnc.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\ElGamalEnc.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\Mac.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\OpenSSLSymmetricEnc.hpp" />
+    <ClInclude Include="..\..\include\mid_layer\SymmetricEnc.hpp" />
+    <ClInclude Include="..\..\include\primitives\Dlog.hpp" />
+    <ClInclude Include="..\..\include\primitives\DlogOpenSSL.hpp" />
+    <ClInclude Include="..\..\include\primitives\Hash.hpp" />
+    <ClInclude Include="..\..\include\primitives\HashBlake2.hpp" />
+    <ClInclude Include="..\..\include\primitives\HashOpenSSL.hpp" />
+    <ClInclude Include="..\..\include\primitives\Kdf.hpp" />
+    <ClInclude Include="..\..\include\primitives\Prf.hpp" />
+    <ClInclude Include="..\..\include\primitives\PrfOpenSSL.hpp" />
+    <ClInclude Include="..\..\include\primitives\Prg.hpp" />
+    <ClInclude Include="..\..\include\primitives\RandomOracle.hpp" />
+    <ClInclude Include="..\..\include\primitives\TrapdoorPermutationOpenSSL.hpp" />
+    <ClInclude Include="..\..\include\primitives\TrapdoorPermutation.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
